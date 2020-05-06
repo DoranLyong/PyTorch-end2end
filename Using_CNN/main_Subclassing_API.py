@@ -13,6 +13,7 @@ os.chdir(cwd)
 # _End: change working directory scope 
 
 
+# _Start: Network design using Subclassing API
 class CNNnet(nn.Module):
     def __init__(self):
         super(CNNnet, self).__init__()
@@ -33,7 +34,7 @@ class CNNnet(nn.Module):
         out = self.act3(self.fc1(out))
         out = self.fc2(out)
         return out
-
+# _End: Network design using Subclassing API
 
 class_names = ['airplane','automobile','bird','cat','deer',
                'dog','frog','horse','ship','truck']
@@ -82,7 +83,6 @@ def training_loop(n_epochs, optimizer, model, loss_fn, train_loader, device:str)
         if epoch == 1 or epoch % 10 == 0:
             print('{} Epoch {}, Training loss {}'.format(
                 datetime.datetime.now(), epoch, loss_train / len(train_loader)))
-
 
 
 def validate(model, train_loader, val_loader, device:str):
