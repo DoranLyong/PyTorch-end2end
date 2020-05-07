@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "C:\\Users\\camin\\anaconda3\\envs\\pytorch_env\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true,
+     // whitelist torch to remove lint errors
+    "python.linting.pylintArgs": [ "--generated-members=numpy.*, torch.* ", "--extension-pkg-whitelist=torch"  ]
+}
