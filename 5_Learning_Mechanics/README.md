@@ -11,4 +11,4 @@
 
 * ```Learning_Machanism_tips.ipynb``` 
     > Introduction to the factors. <br/>
-    > ※ [colab using](https://colab.research.google.com/github/DoranLyong/PyTorch-end2end/blob/master/Learning_Mechanics/Learning_Mechanism_tips.ipynb)
+    > ※ [colab using](https://colab.research.google.com/github/DoranLyong/PyTorch-end2end/blob/master/5_Learning_Mechanics/Learning_Mechanism_tips.ipynb)
