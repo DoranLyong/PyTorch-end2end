@@ -18,8 +18,7 @@ class LeNet5(nn.Module):
             # Start: second convolution layer
             nn.Conv2d(in_channels=6, out_channels=16, kernel_size=5), # input size = (14, 14), output size = (10, 10)
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(kernel_size=2),
-            # output size = (5, 5)
+            nn.MaxPool2d(kernel_size=2), # output size = (5, 5)            
             # End: second convolution layer
         )
         # End: convolution layers
